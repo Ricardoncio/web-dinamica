@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIECORN - Log in</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="centered-col">
+        <div class="logo">
+          <span id="movie">MOVIE</span>
+          <span id="corn">CORN</span>
+        </div>
+        <div>
+            <h2>ALL YOUR MOVIES IS ONE LIBRARY</h2>
+        </div>
+      </header>
+
+    <div class="container">
+
+
+        <form action="#" method="POST" class="centered-col">
+
+            <label for="input1">Email</label>
+            <input type="text" id="input1" name="email">
+            <label for="input2">Password</label>
+            <input type="password" id="input2" name="passwd">
+
+            <p class="errorMsg"></p>
+
+            <div>
+                <p>¿No tienes cuenta? <a href="/registro">Registrate</a></p>
+                <p>¿Password olvidada? <a href="/recuperar-password">Recuperala</a></p>
+            </div>
+
+            <button class="btn">Log in</button>
+
+        </form>
+
+    </div>
+
+    <script src="/javascripts/login.js"></script>
+
+</body>
+</html>

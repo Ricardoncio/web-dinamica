@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIECORN - Inicio</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+  </head>
+  <body>
+
+    <header class="centered-row">
+      <div class="logo centered-row">
+        <span id="movie">MOVIE</span>
+        <span id="corn">CORN</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="greeting centered-col">
+        <div>
+          <h2>¡BIENVENIDO A MOVIECORN!</h2>
+          <h2>ALL YOUR MOVIES IN ONE LIBRARY</h2>
+        </div>
+        <div>
+          <p>¡Entra a ver tu biblioteca!</p>
+          <div class="buttons">
+            <!-- Aqui van los botones que se hacen en index.js -->
+          </div>
+        </div>
+      </div>
+      <div class="updates">
+        <h2>ULTIMAS ACTUALIZACIONES DE USUARIOS:</h2>
+        <div class="carousel-container">
+          <div id="carousel">
+            <!-- Se rellena en index.js -->
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h2>SI NECESITAS AYUDA CONTACTA CON<br>NUESTRO SERVICIO TECNICO</h2>
+        <a class="btn">Contactar</a>
+      </div>
+    </main>
+
+    <dialog id="lightbox">
+
+      <form action="#" method="dialog" class="centered-col">
+
+        <!-- Los datos se rellenan en index.js -->
+        <img src="" alt="">
+        <h2 class="title"></h2>
+        <p class="year"></p>
+        <p class="genre"></p>
+        <p class="director"></p>
+        <p class="descp"></p>
+        <button class="btn">Cerrar</button>
+
+      </form>
+
+    </dialog>
+
+    <dialog id="contact">
+
+      <form action="#" method="dialog" class="centered-col">
+        
+        <h2 class="title">Contacta con nosotros</h2>
+        <div>
+          <label for="input1">Asunto:</label>
+          <input type="text" name="subject" id="input1">
+        </div>
+        <div>
+          <label for="input1">Asunto:</label>
+          <textarea name="description" id=""></textarea>
+        </div>
+        <button class="btn">Contactar</button>
+
+      </form>
+      <a class="btn centered-row" href="">
+        <span class="material-symbols-outlined">close</span>
+      </a>
+
+    </dialog>
+
+    <script src="/javascripts/index.js"></script>
+
+  </body>
+</html>

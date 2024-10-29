@@ -1,0 +1,236 @@
+@import url("style.css");
+
+header {
+
+    a.userCard {
+        position: absolute;
+        right: 5em;
+
+    }
+
+}
+
+
+
+main {
+    background-image: linear-gradient(#252525,var(--secondary-dark));
+    width: 100%;
+    min-height: calc(100vh - 116px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    div.greeting {
+        gap: 1rem;
+
+        h2 {
+            margin: 0;
+        }
+
+        div.buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+    }
+
+    div.updates {
+
+        div.carousel-container {
+            overflow: hidden;
+            position: relative;
+            height: 302px;
+            width: calc(calc(var(--index-movie-poster-width) * 3) + calc(3rem * 2)); /* 3rem es el gap entre movie cards, dentro de div#carousel */
+            margin: auto;
+
+            div#carousel {
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+                width: calc(calc(var(--index-movie-poster-width) * var(--index-movie-cards-count)) + calc(calc(var(--index-movie-cards-count) - 1) * 3rem)); /* 3rem es el gap de nuevo */
+                animation: 15s infinite slide-left;
+                position: absolute;
+                left: 0;
+
+                div.movie {
+                    width: var(--index-movie-poster-width);
+                    height: var(--index-movie-poster-height);
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+
+                    &:hover :first-child {
+                        cursor: pointer;
+                        color: white;
+                        background: linear-gradient(rgba(0, 0, 0, 0.274),black);
+                        h2 {
+                            background: none;
+                            height: 80px;
+                        }
+                    }
+
+                    div.inner {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        color: rgba(0,0,0,0);
+                        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+                        transition: 0.3s;
+                        
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            height: 100%;
+                            width: 100%;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@keyframes slide-left {
+    0% {left: 0;}
+    20% {left: 0;}
+    25% {left: calc(-1 * (var(--index-movie-poster-width) + 3rem));}
+    45% {left: calc(-1 * (var(--index-movie-poster-width) + 3rem));}
+    50% {left: calc(-1 * (calc(var(--index-movie-poster-width) * 2) + 6rem));}
+    70% {left: calc(-1 * (calc(var(--index-movie-poster-width) * 2) + 6rem));}
+    75% {left: calc(-1 * (calc(var(--index-movie-poster-width) * 3) + 9rem));}
+    95% {left: calc(-1 * (calc(var(--index-movie-poster-width) * 3) + 9rem));}
+    100% {left: 0;}
+
+}
+
+dialog {
+    background-color: var(--secondary-dark);
+    width: 30%;
+    min-width: 500px;
+    padding: 3rem;
+    border: none;
+    border-radius: 25px;
+
+    &#lightbox {
+
+        form {
+            color: white;
+            gap: 1rem;
+
+            img {
+                width: calc(var(--index-movie-poster-width) * 1.5);
+                height: calc(var(--index-movie-poster-height) * 1.5);
+                object-fit: contain;
+
+            }
+            
+            button {
+                outline: none;
+                margin-top: 2rem;
+
+            }
+
+            p {
+                margin: 0;
+
+                &.descp {
+                    max-width: 70%;
+
+                }
+
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+    &#contact {
+        position: relative;
+
+        form {
+            color: white;
+            gap: 1rem;
+
+            button {
+                outline: none;
+                margin-top: 2rem;
+
+            }
+
+            div {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                label {
+                    font-family: var(--title-font-family);
+                    font-weight: lighter;
+                    font-size: 1.5em;
+                    text-align: left;
+    
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 10px;
+                    resize: none;
+
+                    &:focus {
+                        outline-color: var(--primary-color);
+        
+                    }
+
+                }
+
+                input {
+                    width: 94%;
+                    padding: 0.6rem 1.2rem;
+                    border-radius: 10px;
+                    border-color: var(--secondary-light);
+        
+                    &:focus {
+                        outline-color: var(--primary-color);
+        
+                    }
+        
+                }
+
+            }
+
+        }
+
+    }
+
+    a.btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 25px 0 0;
+
+    }
+
+    &::backdrop {
+        background-color: rgba(0,0,0,0.65);
+
+    }
+}

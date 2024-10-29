@@ -1,0 +1,96 @@
+body {
+    background-image: url("/images/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-size: 16px;
+    letter-spacing: 5px;
+
+}
+
+.btn {
+    border-color: var(--secondary-dark);
+    color: var(--secondary-dark);
+    font-weight: bold;
+
+}
+
+header {
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+    margin-top: 1.5rem;
+
+    div.logo {
+
+        span {
+            font-size: 3.5em;
+            
+        }
+
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+}
+
+div.container {
+    min-width: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 4rem;
+
+    form {
+        background-color: rgba(160,160,160,0.5);
+        padding: 4rem;
+        border-radius: 10px;
+        gap: 1rem;
+        color: var(--secondary-dark);
+
+        label{
+            font-family: var(--title-font-family);
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: left;
+            width: 70%;
+            
+        }
+
+        input {
+            width: 70%;
+            padding: 0.6rem 1.2rem;
+            border-radius: 10px;
+            border-color: var(--secondary-light);
+
+            &:focus {
+                outline-color: var(--primary-color);
+
+            }
+
+        }
+
+        p {
+            font-weight: bold;
+            letter-spacing: 4px;
+
+            a {
+                font-family: var(--title-font-family);
+                color: var(--primary-color);
+                text-shadow: 0 1px 4px black;
+                font-weight: lighter;
+
+            }
+
+            &.errorMsg {
+                color: red;
+            }
+
+        }
+
+    }
+
+}

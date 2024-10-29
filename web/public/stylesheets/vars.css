@@ -1,0 +1,11 @@
+:root {
+    --title-font-family: "Koulen", sans-serif;
+    --text-font-family: "Titillium Web", sans-serif;
+    --primary-color: #e7e72d;
+    --primary-color-shadow: #b4b419;
+    --secondary-light: #393939;
+    --secondary-dark: #282828;
+    --index-movie-poster-width: 200px;
+    --index-movie-poster-height: 300px;
+    --index-movie-cards-count: 6;
+  }
