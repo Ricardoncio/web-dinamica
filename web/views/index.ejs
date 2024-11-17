@@ -14,10 +14,12 @@
   <body>
 
     <header class="centered-row">
-      <div class="logo centered-row">
-        <span id="movie">MOVIE</span>
-        <span id="corn">CORN</span>
-      </div>
+      <a href="/inicio">
+        <div class="logo centered-row">
+          <span id="movie">MOVIE</span>
+          <span id="corn">CORN</span>
+        </div>
+      </a>
     </header>
 
     <main>
@@ -37,7 +39,19 @@
         <h2>ULTIMAS ACTUALIZACIONES DE USUARIOS:</h2>
         <div class="carousel-container">
           <div id="carousel">
-            <!-- Se rellena en index.js -->
+            
+            <% for (let movie of carouselMovies) { %>
+              <div class="movie <%= movie.id %>">
+                <img src="<%= movie.imagen %>" alt="Imagen de <%= movie.titulo %>">
+                <div class="inner">
+                  <div>
+                    <h2><%= movie.titulo %></h2>
+                  </div>
+                </div>
+              </div> 
+            <% } %>
+
+
           </div>
         </div>
       </div>
@@ -46,23 +60,6 @@
         <a class="btn">Contactar</a>
       </div>
     </main>
-
-    <dialog id="lightbox">
-
-      <form action="#" method="dialog" class="centered-col">
-
-        <!-- Los datos se rellenan en index.js -->
-        <img src="" alt="">
-        <h2 class="title"></h2>
-        <p class="year"></p>
-        <p class="genre"></p>
-        <p class="director"></p>
-        <p class="descp"></p>
-        <button class="btn">Cerrar</button>
-
-      </form>
-
-    </dialog>
 
     <dialog id="contact">
 
@@ -86,6 +83,29 @@
 
     </dialog>
 
+    <script>
+
+      document.querySelectorAll("div.movie").forEach((e) => {
+          e.addEventListener('click', (event) => {
+              const dialog = document.querySelector("dialog#lightbox");
+              const form = dialog.querySelector("form");
+              const id = e.className.split(" ")[1];
+              const movie = carouselMovies.find((e) => e.id == id);
+              
+              dialog.querySelector("img").src = movie.imagen;
+              form.querySelector(".title").textContent = movie.titulo;
+              form.querySelector(".year").textContent = movie.anho + " " + movie.tipo + " [" + movie.estado + "]";
+              form.querySelector(".genre").textContent = movie.generos
+              form.querySelector(".director").textContent = "Dirigida por " + movie.director;
+              form.querySelector(".descp").textContent = movie.descripcion;
+
+              dialog.showModal();
+
+          })
+
+      });
+
+    </script>
     <script src="/javascripts/index.js"></script>
 
   </body>

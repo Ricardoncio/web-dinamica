@@ -1,0 +1,52 @@
+[
+    {
+        "user": "Francisco",
+        "email": "francisco@romero.es",
+        "passwd": "1234",
+        "copias": [
+            { "id": 3, "estado": "bueno", "tipo": "BLUE-RAY" }
+        ]
+    },
+    {
+        "user": "Ricardo",
+        "email": "ricardo@gmail.com",
+        "passwd": "1234",
+        "copias": [
+            { "id": 1, "estado": "bueno", "tipo": "DVD" },
+            { "id": 8, "estado": "malo", "tipo": "BLUE-RAY" }
+        ]
+    },
+    {
+        "user": "Maria",
+        "email": "maria@example.com",
+        "passwd": "abcd1234",
+        "copias": [
+            { "id": 4, "estado": "bueno", "tipo": "DVD" },
+            { "id": 6, "estado": "bueno", "tipo": "BLUE-RAY" },
+            { "id": 9, "estado": "regular", "tipo": "DVD" }
+        ]
+    },
+    {
+        "user": "Laura",
+        "email": "laura123@yahoo.com",
+        "passwd": "pass2023",
+        "copias": [
+            { "id": 2, "estado": "regular", "tipo": "BLUE-RAY" },
+            { "id": 10, "estado": "bueno", "tipo": "DVD" },
+            { "id": 7, "estado": "malo", "tipo": "BLUE-RAY" },
+            { "id": 5, "estado": "regular", "tipo": "DVD" }
+        ]
+    },
+    {
+        "user": "Carlos",
+        "email": "carlos@hotmail.com",
+        "passwd": "qwerty",
+        "copias": [
+            { "id": 11, "estado": "malo", "tipo": "DVD" },
+            { "id": 7, "estado": "bueno", "tipo": "BLUE-RAY" },
+            { "id": 5, "estado": "regular", "tipo": "DVD" },
+            { "id": 10, "estado": "bueno", "tipo": "BLUE-RAY" },
+            { "id": 4, "estado": "regular", "tipo": "DVD" }
+        ]
+    }
+]

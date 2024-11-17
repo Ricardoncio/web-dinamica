@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "titulo": "Seven",
+        "anho": 1995,
+        "generos": ["Policíaca", "Drama", "Thriller"],
+        "director": "David Fincher",
+        "descripcion": "Dos detectives, un novato y un veterano, dan caza a un asesino en serie cuyo móvil son los siete pecados capitales.",
+        "imagen": "https://image.tmdb.org/t/p/original/uVPcVz4b2hnSGrXYLdIGRXwcivs.jpg"
+    },
+    {
+        "id": 2,
+        "titulo": "Joker",
+        "anho": 2019,
+        "generos": ["Crimen", "Drama", "Thriller"],
+        "director": "Todd Phillips",
+        "descripcion": "En Gothan, Arthur Fleck, un comediante con problemas de salud mental, es marginado y maltratado por la sociedad. Se adentra en una espiral de crimen que resulta revolucionaria. Pronto conoce a su alter-ego, el Joker.",
+        "imagen": "https://image.tmdb.org/t/p/original/g9l7iLYusH82bbEbwGCJzhVkOe2.jpg"
+    },
+    {
+        "id": 3,
+        "titulo": "Gladiator",
+        "anho": 2000,
+        "generos": ["Acción", "Drama", "Épica"],
+        "director": "Ridley Scott",
+        "descripcion": "Un exgeneral romano se propone vengarse del emperador corrupto que asesinó a su familia y lo envió a la esclavitud.",
+        "imagen": "https://image.tmdb.org/t/p/original/o6XhzKghQFliN49iE4M4RX94PTB.jpg"
+    },
+    {
+        "id": 4,
+        "titulo": "300",
+        "anho": 2006,
+        "generos": ["Acción", "Drama", "Épica"],
+        "director": "Zack Snyder",
+        "descripcion": "El rey Leónidas de Esparta y una fuerza de 300 hombres luchan contra los persas en las Termópilas en el año 480 a. C.",
+        "imagen": "https://image.tmdb.org/t/p/original/d0jScEen662Q1RzEYHmVhvl0UGc.jpg"
+    },
+    {
+        "id": 5,
+        "titulo": "El Club de la Lucha",
+        "anho": 1999,
+        "generos": ["Drama", "Psicológico"],
+        "director": "David Fincher",
+        "descripcion": "Un oficinista insomne y un fabricante de jabones forman un club de lucha clandestino que se convierte en mucho más.",
+        "imagen": "https://image.tmdb.org/t/p/original/1yWmCAIGSVNuTOGyz9F48W9g1Ux.jpg"
+    },
+    {
+        "id": 6,
+        "titulo": "Interstellar",
+        "anho": 2014,
+        "generos": ["Aventura", "Sci-fi", "Drama"],
+        "director": "Christopher Nolan",
+        "descripcion": "Un equipo de exploradores viaja a través de un agujero de gusano en el espacio en un intento de garantizar la supervivencia de la humanidad.",
+        "imagen": "https://image.tmdb.org/t/p/original/nrSaXF39nDfAAeLKksRCyvSzI2a.jpg"
+    },
+    {
+        "id": 7,
+        "titulo": "Origen",
+        "anho": 2010,
+        "generos": ["Acción", "Sci-fi", "Thriller"],
+        "director": "Christopher Nolan",
+        "descripcion": "Un ladrón que roba secretos corporativos a través del uso de la tecnología de compartición de sueños recibe la tarea inversa: plantar una idea en la mente de un C.E.O.",
+        "imagen": "https://image.tmdb.org/t/p/original/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg"
+    },
+    {
+        "id": 8,
+        "titulo": "The Dark Knight",
+        "anho": 2008,
+        "generos": ["Acción", "Crimen", "Drama"],
+        "director": "Christopher Nolan",
+        "descripcion": "Cuando el caos desciende sobre Gotham, Batman debe enfrentarse al Joker, un criminal que busca sumir la ciudad en la anarquía.",
+        "imagen": "https://image.tmdb.org/t/p/original/8QDQExnfNFOtabLDKqfDQuHDsIg.jpg"
+    },
+    {
+        "id": 9,
+        "titulo": "The Godfather",
+        "anho": 1972,
+        "generos": ["Crimen", "Drama"],
+        "director": "Francis Ford Coppola",
+        "descripcion": "La crónica de la poderosa familia criminal Corleone bajo el liderazgo de Vito Corleone en Nueva York después de la Segunda Guerra Mundial.",
+        "imagen": "https://image.tmdb.org/t/p/original/5HlLUsmsv60cZVTzVns9ICZD6zU.jpg"
+    },
+    {
+        "id": 10,
+        "titulo": "Forrest Gump",
+        "anho": 1994,
+        "generos": ["Drama", "Romance"],
+        "director": "Robert Zemeckis",
+        "descripcion": "La historia de un hombre con una mente sencilla pero amable que vive una vida extraordinaria.",
+        "imagen": "https://image.tmdb.org/t/p/original/oiqKEhEfxl9knzWXvWecJKN3aj6.jpg"
+    },
+    {
+        "id": 11,
+        "titulo": "Schindler's List",
+        "anho": 1993,
+        "generos": ["Biografía", "Drama", "Historia"],
+        "director": "Steven Spielberg",
+        "descripcion": "La historia de Oskar Schindler, un empresario alemán que salvó a cientos de judíos durante el Holocausto.",
+        "imagen": "https://image.tmdb.org/t/p/original/xnvHaMFNXzemoH4uXHDMtKnpF7l.jpg"
+    }
+]

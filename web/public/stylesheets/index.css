@@ -15,7 +15,7 @@ header {
 main {
     background-image: linear-gradient(#252525,var(--secondary-dark));
     width: 100%;
-    min-height: calc(100vh - 116px);
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -124,43 +124,6 @@ dialog {
     padding: 3rem;
     border: none;
     border-radius: 25px;
-
-    &#lightbox {
-
-        form {
-            color: white;
-            gap: 1rem;
-
-            img {
-                width: calc(var(--index-movie-poster-width) * 1.5);
-                height: calc(var(--index-movie-poster-height) * 1.5);
-                object-fit: contain;
-
-            }
-            
-            button {
-                outline: none;
-                margin-top: 2rem;
-
-            }
-
-            p {
-                margin: 0;
-
-                &.descp {
-                    max-width: 70%;
-
-                }
-
-            }
-
-            h2 {
-                margin-bottom: 0;
-            }
-
-        }
-
-    }
 
     &#contact {
         position: relative;
