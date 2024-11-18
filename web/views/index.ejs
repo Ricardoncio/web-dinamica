@@ -85,6 +85,12 @@
 
     <script>
 
+      let splitUrl = window.location.href.split("/");
+      let user = splitUrl[splitUrl.length - 1];
+
+      let logo = document.querySelector("header a");
+      logo.href = "/inicio/" + user;
+
       document.querySelectorAll("div.movie").forEach((e) => {
           e.addEventListener('click', (event) => {
               const dialog = document.querySelector("dialog#lightbox");

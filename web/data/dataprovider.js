@@ -32,16 +32,13 @@ function getUserLibrary(user) {
         let copies = users.find((e) => e.user == user).copias;
 
         for (const copy of copies) {
-            console.log(copy)
             let movie = movies.find((e) => e.id == copy.id);
-            console.log(movie)
             movie.estado = copy.estado;
             movie.tipo = copy.tipo;
             library.push(movie);
         }
     }
 
-    console.log(library);
     return library;
 
 }

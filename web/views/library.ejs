@@ -30,7 +30,7 @@
         <ul>
 
           <% for (const movie of library) { %>
-            <li><a href="#"><%= movie.titulo %></a></li>
+            <li><a href="<%= movie.id %>"><%= movie.titulo %></a></li>
           <% } %>
 
         </ul>
@@ -56,6 +56,29 @@
 
     </div>
 
+    <script>
+
+      let splitUrl = window.location.href.split("/");
+      let user = splitUrl[splitUrl.length - 1];
+
+      let logo = document.querySelector("header a");
+      logo.href = "/inicio/" + user;
+
+      document.querySelectorAll("aside ul li a").forEach((e) => {
+        let user = document.querySelector("aside h2").textContent.split(" ")[2];
+        let movieID = e.href.split('/')[4];
+        e.href = "/copy/" + user + "/" + movieID;
+      });
+
+      document.querySelectorAll("div.movie").forEach((e) => {
+        e.addEventListener('click', () => {
+          let user = document.querySelector("aside h2").textContent.split(" ")[2];
+          let movieID = e.classList[1];
+          window.location.href = "/copy/" + user + "/" + movieID;
+        });
+      });
+
+    </script>
     
 </body>
 </html>

@@ -41,7 +41,7 @@ div.container {
     main {
         background-image: linear-gradient(#252525,var(--secondary-dark));
         width: 80%;
-        min-height: calc(100vh - 116px);
+        min-height: calc(100vh - 115px);
 
         div.copiesContainer {
             display: flex;

@@ -24,10 +24,31 @@
 
     <main>
 
-      <img src="<%= copy.imagen %>" alt="Imagen de <%= copy.titulo %>">
-      <h2><%= copy.titulo %></h2>
-      
-
+      <div class="container">
+        <img src="<%= copy.imagen %>" alt="Imagen de <%= copy.titulo %>">
+        <h2><%= copy.titulo %></h2>
+        <h3><%= copy.anho %> [<%= copy.tipo %>] [<%= copy.estado %>]</h3>
+        <h3><%= copy.generos %></h3>
+        <h3><%= copy.director %></h3>
+        <p><%= copy.descripcion %></p>
+        <a class="btn centered-row" href="">
+          <span class="material-symbols-outlined">close</span>
+        </a>
+      </div>
     </main>
 
+    <script>
+
+      const btn = document.querySelector("div.container a.btn");
+      let splitUrl = window.location.href.split("/");
+      let user = splitUrl[splitUrl.length - 2];
+
+      btn.href = "/library/" + user;
+
+      let logo = document.querySelector("header a");
+      logo.href = "/inicio/" + user;
+
+    </script>
+
   </body>
+</html>
